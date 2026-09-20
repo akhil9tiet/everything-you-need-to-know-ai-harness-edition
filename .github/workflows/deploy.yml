@@ -25,11 +25,11 @@ jobs:
           node-version: 20
       - name: Syntax-check site scripts
         run: |
-          node --check js/data.js
-          node --check js/catalog.js
-          node --check js/site.js
-          node --check js/articles.js
-          node --check js/articles-app.js
+          node --check aiHarnesses/js/data.js
+          node --check aiHarnesses/js/catalog.js
+          node --check aiHarnesses/js/site.js
+          node --check aiHarnesses/js/articles.js
+          node --check aiHarnesses/js/articles-app.js
 
   deploy:
     needs: validate
@@ -46,7 +46,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'aiHarnesses'
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
