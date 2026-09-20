@@ -4,7 +4,11 @@ const SITE_PAGES = [
 ];
 
 const scriptPath = location.pathname;
-const baseDir = scriptPath.slice(0, scriptPath.lastIndexOf('/'));
+const pathParts = scriptPath.split('/').filter(Boolean);
+if (pathParts.length && !pathParts[pathParts.length - 1].includes('.')) pathParts.pop();
+pathParts.pop();
+while (pathParts.length && ['templates', 'css', 'js'].includes(pathParts[pathParts.length - 1])) pathParts.pop();
+const baseDir = pathParts.join('/');
 const linkTo = (href) => (baseDir ? baseDir + '/' + href : href);
 const current = (scriptPath.split('/').pop() || 'index.html');
 
