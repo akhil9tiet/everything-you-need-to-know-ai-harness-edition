@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="date" content="{{DATE_ADDED}}" />
+  <link rel="icon" href="data:," />
+  <title>{{TITLE}} | AI Harness Landscape</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+<main class="page">
+  <article class="article">
+    <div class="eyebrow">Article</div>
+    <h1>{{TITLE}}</h1>
+    <div class="article-meta">
+      Added <time datetime="{{DATE_ADDED}}">{{DATE_ADDED}}</time>
+      · Updated <time datetime="{{DATE_UPDATED}}">{{DATE_UPDATED}}</time>
+    </div>
+    <div class="article-body">
+      <p>{{CONTENT — write the article here. Images, tables, blockquotes and code all pick up the shared styles in css/styles.css.}}</p>
+    </div>
+  </article>
+  <footer class="footer">Set {{DATE_ADDED}} and {{DATE_UPDATED}} per post (ISO dates like 2026-09-20). Add this page by copying this file to the site root and registering it in the ARTICLES array in js/articles.js.</footer>
+</main>
+<script src="../js/site.js"></script>
+</body>
+</html>
