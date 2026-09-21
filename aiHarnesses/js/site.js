@@ -1,3 +1,16 @@
+(function () {
+  const gtag = 'G-DPP72KHXQ8';
+  window.dataLayer = window.dataLayer || [];
+  function gtagPush() { window.dataLayer.push(arguments); }
+  window.gtag = gtagPush;
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gtag;
+  document.head.appendChild(s);
+  gtagPush('js', new Date());
+  gtagPush('config', gtag);
+})();
+
 const SITE_PAGES = [
   { href: 'aiHarness.html', label: 'Market map' },
   { href: 'index.html', label: 'Articles' }
