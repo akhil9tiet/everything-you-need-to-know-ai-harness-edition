@@ -58,8 +58,8 @@ flowchart LR
 ├── LICENSE               MIT license
 ├── README.md
 └── aiHarnesses/          The published static site (deployed as the Pages root)
-    ├── index.html        The market-map page (hero, signals, picks, matrix, method)
-    ├── articles.html     Writing index — tiles/lists sorted by date and popularity
+    ├── index.html        Homepage — the articles index (tiles/lists sorted by date and popularity)
+    ├── aiHarness.html    The market-map page (hero, signals, picks, matrix, method) at /aiHarness
     ├── css/              Shared styles (styles.css)
     ├── js/
     │   ├── data.js       All 177 products + 18 category definitions
@@ -115,7 +115,7 @@ We welcome **additions, subtractions, and edits** to the landscape. Because the 
 Products appear in two places:
 
 - **`aiHarnesses/js/data.js`** — the single source of truth for the comparison matrix. Add one row to the `P` array in the matching category block (or propose a new category in the issue).
-- **Static sections in `aiHarnesses/index.html`** — for "Fast shortlist by job", signals, and the future/picks prose. Only propose these for genuinely notable items.
+- **Static sections in `aiHarnesses/aiHarness.html`** — for "Fast shortlist by job", signals, and the future/picks prose. Only propose these for genuinely notable items.
 
 Row format (`P` entries are arrays, indexed as follows):
 
@@ -140,7 +140,7 @@ Row format (`P` entries are arrays, indexed as follows):
 
 ### Edits
 
-Change is the common case — pricing moves, trade-offs change. Submit edits as minimal diffs to the affected row(s) in `aiHarnesses/js/data.js`, and update the prose in `aiHarnesses/index.html` only when the change affects a pick/signal.
+Change is the common case — pricing moves, trade-offs change. Submit edits as minimal diffs to the affected row(s) in `aiHarnesses/js/data.js`, and update the prose in `aiHarnesses/aiHarness.html` only when the change affects a pick/signal.
 
 **Required for edits:** describe *before → after* in the PR and cite the new source. Entries with the `re-check` tag are explicitly open for correction.
 
@@ -160,7 +160,7 @@ Before opening a PR, confirm:
 - [ ] Price text matches the numeric `start` value.
 - [ ] Sources cited; unverified data marked `re-check`.
 - [ ] `python -m http.server 8000` loads the page and the product appears in the matrix.
-- [ ] Snapshot date stays current with the data (see `<div class="snapshot">` in `aiHarnesses/index.html`).
+- [ ] Snapshot date stays current with the data (see `<div class="snapshot">` in `aiHarnesses/aiHarness.html`).
 
 ### Release cadence
 

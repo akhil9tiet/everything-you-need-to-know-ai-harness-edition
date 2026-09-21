@@ -1,151 +1,37 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Harness Landscape</title>
+  <title>Articles — AI Harness Landscape</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 <main class="page">
-  <section class="hero">
-    <div>
-      <div class="eyebrow">Market map · September 2026</div>
-      <h1>Choose the harness, not just the model.</h1>
-      <p class="lede">A practical map of 177 AI products and research systems across coding, autonomous engineering, self-improving systems, 3D, games, filmmaking, business intelligence, maps, healthcare, legal work, creative production, music, and agent infrastructure — with the trade-offs that headline pricing hides.</p>
-    </div>
-    <aside class="hero-note">
-      <strong>The short version</strong>
-      <p>“Harness” is used broadly here: an operating layer that gives a model tools, context, controls, memory or a professional workflow. That includes autonomous agents, but also 3D co-pilots, game-world systems, BI analysts, geospatial tools, clinical decision support and legal workbenches. The key distinction is <em>what the system may do without human review</em>.</p>
-      <div class="snapshot">Research snapshot: Sep 2026 · prices in USD unless noted<br />Added <time datetime="2026-09-20">2026-09-20</time> · Updated <time datetime="2026-09-20">2026-09-20</time></div>
-    </aside>
-  </section>
-
-  <section class="stats" aria-label="Landscape summary">
-    <div class="stat"><b>177</b><span>products and research systems</span></div>
-    <div class="stat"><b>18</b><span>distinct categories</span></div>
-    <div class="stat"><b>12</b><span>improvement-loop systems</span></div>
-    <div class="stat"><b>6</b><span>steps in the agent learning loop</span></div>
-  </section>
-
-  <section class="signals" aria-label="Market signals">
-    <article class="signal"><div class="num">01 / COST</div><h2>The $20 plan is no longer the bill.</h2><p>Credit pools, token meters and per-execution pricing now dominate. Compare the cost of a representative week, not the subscription headline.</p></article>
-    <article class="signal"><div class="num">02 / SHAPE</div><h3>Categories are collapsing</h3><p>Copilot, Codex and Claude increasingly stretch across IDE, terminal and cloud-agent surfaces.</p></article>
-    <article class="signal"><div class="num">03 / LEARNING</div><h3>The harness becomes the learner</h3><p>DSPy, eval platforms and evolutionary systems improve prompts, routes, tools and code from measured outcomes.</p></article>
-    <article class="signal"><div class="num">04 / CREATIVE</div><h3>The model is only one layer</h3><p>Camera control, temporal consistency, masks, timelines, stems and commercial rights now separate a demo from a production harness.</p></article>
+  <section style="max-width:820px;padding:clamp(10px,3vw,34px) 0 20px;border-bottom:1px solid var(--faint)">
+    <div class="eyebrow">Writing · scaffold</div>
+    <h1>Articles</h1>
+    <p class="lede">Every post shows as a tile or list row here. To publish: copy <code style="font-family:'IBM Plex Mono',monospace;background:var(--faint);padding:1px 5px;border-radius:5px;font-size:13px">templates/article.html</code> to a new file in this folder, fill in the title, dates and body, then add one object to the <code style="font-family:'IBM Plex Mono',monospace;background:var(--faint);padding:1px 5px;border-radius:5px;font-size:13px">ARTICLES</code> array in <code style="font-family:'IBM Plex Mono',monospace;background:var(--faint);padding:1px 5px;border-radius:5px;font-size:13px">js/articles.js</code>. Sort by date or popularity; the tiles below are placeholders until the array is replaced.</p>
   </section>
 
   <section>
-    <div class="section-head"><h2>Fast shortlist by job</h2><p>Not universal winners — the strongest fit called out in the research for a specific operating model.</p></div>
-    <div class="picks">
-      <article class="pick"><div class="need">Polished daily IDE</div><h3>Cursor</h3><p><b>Why:</b> reference-grade Tab and agent UX. <b>Watch:</b> agent-credit burn.</p></article>
-      <article class="pick"><div class="need">GitHub enterprise</div><h3>GitHub Copilot</h3><p><b>Why:</b> issue-to-PR, Actions and review share one workflow. <b>Watch:</b> metered AI credits.</p></article>
-      <article class="pick"><div class="need">Terminal autonomy</div><h3>Claude Code</h3><p><b>Why:</b> deep subagents, hooks and MCP. <b>Watch:</b> Claude lock-in and Max-tier pressure.</p></article>
-      <article class="pick"><div class="need">No model lock-in</div><h3>OpenCode</h3><p><b>Why:</b> 75+ providers, local models and self-hosting. <b>Watch:</b> security history and separate API costs.</p></article>
-      <article class="pick"><div class="need">Async issue-to-PR</div><h3>Devin / OpenHands</h3><p><b>Choose Devin</b> for managed parallel execution; <b>OpenHands</b> for inspectability and self-hosting.</p></article>
-      <article class="pick"><div class="need">Production orchestration</div><h3>LangGraph</h3><p><b>Why:</b> durable execution and control. <b>Watch:</b> higher modeling and implementation effort.</p></article>
-      <article class="pick"><div class="need">Measured self-improvement</div><h3>DSPy + eval stack</h3><p><b>Why:</b> optimize prompts and programs against a real metric. <b>Watch:</b> a weak eval teaches the wrong behavior faster.</p></article>
-      <article class="pick"><div class="need">Cinematic video generation</div><h3>Runway / Flow</h3><p><b>Choose Runway</b> for a mature creative workspace; <b>Flow</b> for Veo-native camera and scene control.</p></article>
-      <article class="pick"><div class="need">Social-first video effects</div><h3>Higgsfield</h3><p><b>Why:</b> strong camera presets and fashion-forward motion language. <b>Watch:</b> credit burn and consistency.</p></article>
-      <article class="pick"><div class="need">Full-song generation</div><h3>Suno / Udio</h3><p><b>Choose Suno</b> for speed and hooks; <b>Udio</b> for granular iteration. Verify commercial rights before release.</p></article>
-      <article class="pick"><div class="need">Blender as an agent surface</div><h3>Blender MCP</h3><p><b>Why:</b> lets an LLM inspect and operate Blender through tools. <b>Watch:</b> community-server security and destructive scene edits.</p></article>
-      <article class="pick"><div class="need">Playable game prototype</div><h3>Rosebud AI / Unity AI</h3><p><b>Choose Rosebud</b> for a fast browser game; <b>Unity AI</b> when editable engine assets and code matter.</p></article>
-      <article class="pick"><div class="need">Film planning</div><h3>Filmustage / RivetAI</h3><p><b>Why:</b> breakdowns, schedules and budgets turn a script into a production plan. These are producer co-pilots, not autonomous directors.</p></article>
-      <article class="pick"><div class="need">Talk to company data</div><h3>Power BI / Tableau / Genie</h3><p><b>Why:</b> semantic models and governed data make answers auditable. <b>Watch:</b> confident answers built on weak metric definitions.</p></article>
-      <article class="pick"><div class="need">Spatial analysis</div><h3>ArcGIS / CARTO</h3><p><b>Why:</b> natural-language analysis sits on real geospatial engines. <b>Watch:</b> a plausible map is not a validated map.</p></article>
-      <article class="pick"><div class="need">Clinical workflow</div><h3>OpenEvidence / Dragon Copilot</h3><p><b>Why:</b> evidence retrieval and documentation support. <b>Boundary:</b> clinicians retain diagnosis and prescribing authority.</p></article>
-      <article class="pick"><div class="need">Litigation & casework</div><h3>Harvey / CoCounsel</h3><p><b>Why:</b> research, review and drafting at matter scale. <b>Boundary:</b> lawyers must verify citations, strategy and filings.</p></article>
-    </div>
-  </section>
-
-  <section class="future" aria-labelledby="future-title">
-    <div class="section-head"><h2 id="future-title">Where the industry goes next</h2><p>The important shift is not simply better models. It is the harness closing the loop between an attempt, a measured result and the next attempt.</p></div>
-    <div class="future-intro">
-      <article class="future-thesis">
-        <div>
-          <div class="eyebrow">The missing category</div>
-          <h3>Self-improving does not mean unsupervised self-rewriting.</h3>
-        </div>
-        <p>The credible near-term systems improve prompts, examples, tool choice, memory, routing and code inside a sandbox. They earn each change against an evaluation set, then canary, compare and roll back. Unbounded production agents editing their own objectives remain a research idea, not a responsible operating model.</p>
-      </article>
-      <article class="loop">
-        <div class="loop-label">The emerging improvement loop</div>
-        <div class="loop-steps">
-          <div class="loop-step"><b>01</b><strong>Observe</strong><span>Collect traces, costs, failures and human corrections.</span></div>
-          <div class="loop-step"><b>02</b><strong>Score</strong><span>Run task-specific evals instead of relying on vibes.</span></div>
-          <div class="loop-step"><b>03</b><strong>Propose</strong><span>Change a prompt, route, memory rule, tool or implementation.</span></div>
-          <div class="loop-step"><b>04</b><strong>Sandbox</strong><span>Test against held-out tasks and adversarial cases.</span></div>
-          <div class="loop-step"><b>05</b><strong>Promote</strong><span>Canary the winner with limits and an audit trail.</span></div>
-          <div class="loop-step"><b>06</b><strong>Rollback</strong><span>Revert when quality, safety or cost regresses.</span></div>
-        </div>
-        <p class="loop-note"><b>The moat moves into the feedback system.</b> Models can be swapped; accumulated traces, evals, permissions and recovery procedures are much harder to copy.</p>
-      </article>
-    </div>
-
-    <div class="section-head"><h2>Four earlier waves explain this one</h2><p>Each wave began with a dazzling component, then value migrated into the operating layer that made the component dependable and useful.</p></div>
-    <div class="parallel" role="table" aria-label="Historical technology parallels">
-      <div class="parallel-head" role="row"><div role="columnheader">Earlier wave</div><div role="columnheader">The AI-harness parallel</div></div>
-      <div class="parallel-row" role="row"><div role="cell"><strong>PCs → operating systems</strong><p>Raw hardware mattered first. Then the OS won by managing files, devices, permissions and applications.</p></div><div role="cell"><strong>Models → agent operating layers</strong><p>The durable value shifts toward context, tool access, identity, memory, approvals and recovery across many models.</p></div></div>
-      <div class="parallel-row" role="row"><div role="cell"><strong>Browsers → web application runtimes</strong><p>A document viewer became the place where commerce, communication and software actually ran.</p></div><div role="cell"><strong>Chat boxes → action runtimes</strong><p>Assistants are moving from answers to long-running work across browsers, terminals, creative suites and company systems.</p></div></div>
-      <div class="parallel-row" role="row"><div role="cell"><strong>Manual servers → cloud and DevOps</strong><p>Deployment became a measured loop of telemetry, tests, staged releases and rollback.</p></div><div role="cell"><strong>Static prompts → eval-driven operations</strong><p>Agent changes become versioned artifacts, tested on traces, promoted gradually and monitored for regression.</p></div></div>
-      <div class="parallel-row" role="row"><div role="cell"><strong>Feature phones → app ecosystems</strong><p>Sensors, identity, distribution and payments created a platform for specialists.</p></div><div role="cell"><strong>Foundation models → vertical harnesses</strong><p>A few horizontal platforms will host thousands of domain-specific systems for law, medicine, media, finance and industrial work.</p></div></div>
-    </div>
-    <div class="culmination">
-      <h3>How this wave is likely to culminate</h3>
-      <p>Not as one universal “AGI app,” but as a layered market: <b>a small number of horizontal agent operating systems</b> managing identity, memory, permissions and execution; <b>many specialist harnesses</b> encoding domain workflows and review standards; and <b>a competitive pool of interchangeable models</b> routed by quality, latency, privacy and cost. The winners may not own the smartest model. They will own the trusted workflow, the feedback loop and the right to act.</p>
-    </div>
-  </section>
-
-  <section id="matrix">
-    <div class="section-head"><h2>Complete comparison matrix</h2><p>Search any capability or use case. On phones, every row becomes a readable product card rather than a sideways table.</p></div>
     <div class="controls">
-      <div class="control-row">
-        <label class="field" aria-label="Search products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="search" type="search" placeholder="Search product, strength, limitation…" /></label>
-        <label class="field" aria-label="Filter category"><select id="category"><option value="all">All categories</option></select></label>
-        <label class="field" aria-label="Sort products"><select id="sort"><option value="default">Research order</option><option value="price">Lowest entry price</option><option value="open">Open / BYOK first</option><option value="name">Product A–Z</option></select></label>
+      <div class="control-row articles-row">
+        <label class="field" aria-label="Sort articles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 5h14"/><path d="m3 12h9"/><path d="m3 19h5"/><path d="m14 7 4-3v15"/></svg><select id="articleSort"><option value="added">Newest first</option><option value="updated">Recently updated</option><option value="popular">Most popular</option></select></label>
+        <div class="view-toggle" role="group" aria-label="Layout"><button type="button" data-view="tiles" class="active">Tiles</button><button type="button" data-view="list">List</button></div>
       </div>
-      <div class="result-line" id="resultLine">Showing all 177 products and research systems</div>
+      <div class="result-line" id="articleCount"></div>
     </div>
-    <div id="catalog"></div>
-    <div id="empty" class="empty">No products match those filters. Try a broader term.</div>
+    <div id="articles" class="articles"></div>
+    <div id="articlesEmpty" class="empty">No articles yet. Copy <code style="font-family:'IBM Plex Mono',monospace">templates/article.html</code>, then add its entry to <code style="font-family:'IBM Plex Mono',monospace">js/articles.js</code>.</div>
   </section>
 
-  <section class="method">
-    <div>
-      <h2>How to read the prices</h2>
-      <ul>
-        <li><b>Harness</b> includes thick agents, professional applications with embedded AI, and workflows that wrap models in cameras, masks, timelines, semantic layers, spatial engines, evidence sources, approvals or exports. A pure generator is the thinnest edge of the category.</li>
-        <li><b>Free</b> may mean a limited hosted quota, a self-hosted open-source tool, or BYOK. Those are not economically equivalent.</li>
-        <li>For agent-heavy and media-heavy tools, the listed plan is only an entry point. Tokens, credits, seconds, resolution, concurrency and commercial rights can become the larger cost.</li>
-        <li>“Open / BYOK” marks meaningful model or deployment control — not necessarily an OSI-approved license. “Experimental” means research preview or early access; “Human review” marks high-stakes decision support.</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Open questions</h2>
-      <div class="caveats">
-        <div class="caveat">OpenHands paid cloud seat pricing and Cosine pricing were not confirmed.</div>
-        <div class="caveat">CrewAI AMP paid tiers conflict across sources ($25 vs $99).</div>
-        <div class="caveat">v0 and Bolt entry tiers are shown as ranges because sources conflict.</div>
-        <div class="caveat">Google Antigravity pricing is partially verified; Google Jules pricing is based on its Aug 2025 GA schedule.</div>
-        <div class="caveat">Microsoft 365 Premium pricing was last confirmed in late 2025.</div>
-        <div class="caveat">Creative plans are especially volatile: compare usable seconds, resolution, queue priority, watermark rules and model access — not just the monthly fee.</div>
-        <div class="caveat">Music “commercial use” is not the same as copyright ownership. Release rights, training-data provenance and distributor acceptance vary by vendor and plan.</div>
-        <div class="caveat">Professional editors, 3D packages and game engines are included when AI operates inside a controllable production workflow, even if the system is not an autonomous agent.</div>
-        <div class="caveat">World models such as Genie 3, Microsoft Research Muse and Marble are experiments, not shipping replacements for game engines, GIS or production pipelines.</div>
-        <div class="caveat">“Self-improving” spans very different things: production eval/optimization platforms, open research methods and experimental agents that modify code. None should rewrite objectives or deploy changes without bounded tests, approvals and rollback.</div>
-        <div class="caveat">Clinical systems here support evidence review, documentation and low-risk workflows. They must not independently diagnose, prescribe or place orders; licensed clinicians remain responsible.</div>
-        <div class="caveat">Legal systems can research, review and draft, but they do not represent a client, own litigation strategy or make a filing safe. A qualified lawyer must verify authorities and output.</div>
-        <div class="caveat">BI and map agents inherit the quality of their semantic models, source data, coordinate systems and permissions. A confident chart or plausible map is not validation.</div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">Built from vendor sites, official product/pricing documentation, project repositories and the attached research synthesis. Snapshot date: September 2026. Vendor pricing changes frequently; entries marked “re-check” need confirmation. Experimental systems are separated from commercial products; clinical and legal entries are assistive, not autonomous professional authority.</footer>
+  <footer class="footer">Popularity is the <code style="font-family:'IBM Plex Mono',monospace">popularity</code> value in <code style="font-family:'IBM Plex Mono',monospace">js/articles.js</code> — set it to views, reads or a manual score.</footer>
 </main>
-<script src="js/data.js"></script>
-<script src="js/catalog.js"></script>
+<script src="js/articles.js"></script>
+<script src="js/articles-app.js"></script>
 <script src="js/site.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const SITE_PAGES = [
-  { href: 'index.html', label: 'Market map' },
-  { href: 'articles.html', label: 'Articles' }
+  { href: 'aiHarness.html', label: 'Market map' },
+  { href: 'index.html', label: 'Articles' }
 ];
 
 const scriptPath = location.pathname;
